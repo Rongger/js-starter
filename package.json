@@ -5,22 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky init"
   },
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.44.0",
-    "eslint-config-prettier": "^8.8.0",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.33.0",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.0.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "prettier": "^3.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pnpm lint-staged"
-    }
   },
   "lint-staged": {
     "*.{js?(x),ts?(x)}": [
